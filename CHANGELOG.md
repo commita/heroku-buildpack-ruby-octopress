@@ -1,3 +1,124 @@
+## v29 (7/19/2012)
+
+Features:
+
+* support .profile.d/ruby.sh
+* sync stdout so that the buildpack streams even in non-interactive shells
+* Upgrade to Bundler 1.2.0.rc
+
+## v28 (7/16/2012)
+
+Features:
+
+* Vendor OpenJDK6 into slug when using JRuby
+* ruby version support for ruby 1.8.7 via bundler's ruby DSL
+
+Bugfixes:
+
+* sqlite3 error gets displayed again
+
+## v27 (6/14/2012)
+
+Bugfixes:
+
+* Remove `vendor/bundle` message only appears when dir actually exists
+
+## v26 (6/14/2012)
+
+Features:
+
+* print message when assets:precompile finishes successfully
+* Remove `vendor/bundle` if user commits it to their git repo.
+
+## v25 (6/12/2012)
+
+Features:
+
+* support "ruby-xxx-jruby-yyy" for jruby detection packages
+
+## v24 (6/7/2012)
+
+Features:
+
+* removes bundler cache in the slug, to minimize slug size (@stevenh512, #16)
+* optimize push time with caching
+
+## v23 (5/8/2012)
+
+Bugfixes:
+
+* fix ruby version bug with "fatal:-Not-a-git-repository"
+
+## v22 (5/7/2012)
+
+Features:
+
+* bundler 1.2.0.pre
+* ruby version support for ruby 1.9.2/1.9.3 via bundler's ruby DSL
+
+Deprecation:
+
+* ENV['RUBY_VERSION'] in favor of bundler's ruby DSL
+
+## v21 (3/21/2012)
+
+Features:
+
+* bundler 1.1.2
+
+## v20 (3/12/2012)
+
+Features:
+
+* bundler 1.1.0 \o/
+
+## v19 (1/25/2012)
+
+Bugfixes:
+
+* fix native extension building for rbx 2.0.0dev
+
+## v18 (1/18/2012)
+
+Features:
+
+* JRuby support
+* rbx 2.0.0dev support
+
+Bugfixes:
+
+* force db password to be a string in the yaml file
+
+## v17 (12/29/2011)
+
+Features:
+
+* bundler 1.1.rc.7
+
+## v16 (12/29/2011)
+
+Features:
+
+* pass DATABASE_URL to rails 3.1 assets:precompile rake task detection
+
+## v15 (12/27/2011)
+
+Features:
+
+* bundler 1.1.rc.6
+
+## v14 (12/22/2011)
+
+Bugfixes:
+
+* stop freedom patching syck in ruby 1.9.3+
+
+## v13 (12/15/2011)
+
+Features:
+
+* bundler 1.1.rc.5
+
 ## v12 (12/13/2011)
 
 Bugfixes:
