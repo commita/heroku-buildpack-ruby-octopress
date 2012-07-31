@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 
+ENV['HEROKU_BUILDPACK'] = 'true'
+
 # sync output
 $stdout.sync = true
 

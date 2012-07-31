@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 
+ENV['HEROKU_BUILDPACK'] = 'true'
+
 $:.unshift File.expand_path("../../lib", __FILE__)
 require "language_pack"
 
